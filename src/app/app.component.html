@@ -1,3 +1,10 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <div class="container">
+    <div>
+      Network: is <span *ngIf="!connected">NOT </span>connected
+    </div>
+    <div>
+      Battery Status: {{ batteryStatus }}
+    </div>
+  </div>
 </ion-app>
